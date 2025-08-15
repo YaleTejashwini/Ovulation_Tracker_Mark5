@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Home from "./components/Home"; // optional - create it or replace with another page
-import PredictPage from './components/PredictPage';
+// import PredictPage from './components/PredictPage';
 
 
 

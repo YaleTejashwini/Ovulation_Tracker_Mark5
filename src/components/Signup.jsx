@@ -4,6 +4,7 @@ import { auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate, Link } from "react-router-dom";
 
+
 function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -32,7 +33,7 @@ function Signup() {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '80px' }}>
+    <div style={{ textAlign: 'center', marginTop: '80px' }} className="container">
       <h2>Signup</h2>
       <form onSubmit={handleSignup}>
         <input
@@ -41,6 +42,7 @@ function Signup() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          style={{ width: '300px', height: '40px', fontSize: '16px' }}
         /><br /><br />
         <input
           type="password"
@@ -48,6 +50,7 @@ function Signup() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          style={{ width: '300px', height: '40px', fontSize: '16px' }}
         /><br /><br />
         <button type="submit">Sign Up</button>
       </form>
@@ -60,3 +63,7 @@ function Signup() {
 }
 
 export default Signup;
+
+
+
+
